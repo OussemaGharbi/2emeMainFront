@@ -15,6 +15,11 @@ import { ProductBoxOneComponent } from './components/product/product-box-one/pro
 import { FooterOneComponent } from './shared/footer/footer-one/footer-one.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CartVariationComponent } from './modal/cart-variation/cart-variation.component';
+import { QuickViewComponent } from './modal/quick-view/quick-view.component';
+import { CartModalComponent } from './modal/cart-modal/cart-modal.component';
+import { RouterModule } from '@angular/router';
+import { TranslatePipe } from './translate.pipe';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 @NgModule({
@@ -28,6 +33,9 @@ import { CartVariationComponent } from './modal/cart-variation/cart-variation.co
     FooterOneComponent,
     MenuComponent,
     CartVariationComponent,
+    QuickViewComponent,
+    CartModalComponent,
+    TranslatePipe
   ],
   imports: [
     BrowserModule,
@@ -36,6 +44,9 @@ import { CartVariationComponent } from './modal/cart-variation/cart-variation.co
     ReactiveFormsModule,
     HttpClientModule,    
     NgbModule,
+    RouterModule,
+    CarouselModule,
+
 
 
   ],

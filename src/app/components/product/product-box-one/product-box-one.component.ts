@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { QuickViewComponent } from "../../modal/quick-view/quick-view.component";
-import { CartModalComponent } from "../../modal/cart-modal/cart-modal.component";
-import { Product } from "../../../classes/product";
+import { CartModalComponent } from 'src/app/modal/cart-modal/cart-modal.component';
+import { QuickViewComponent } from 'src/app/modal/quick-view/quick-view.component';
+import { Product } from 'src/app/models/Product';
+
 import { ProductService } from "../../../services/product.service";
 
 @Component({
